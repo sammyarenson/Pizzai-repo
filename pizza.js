@@ -8,28 +8,42 @@ class pizza{
     var meatToppings=[];
     var veggieToppings=[];
   }
-sizeCost(){
-  if(this.size[0]){
-    return=7.99;
-
-  }
-  if(this.size[1]){
-    return=9.99;
-
-  }
-  if(this.size[2]){
-    return=12.99
-  }
-  if(this.size[3]){
-    return=15.99
-  }
-}
-
   //type instance functions below
+  sizeCost(){
+    if(this.size[0]){
+      price=7.99;
+      return price
 
+    }
+    if(this.size[1]){
+      price=9.99
+      return price
 
-
+    }
+    if(this.size[2]){
+      price=12.99
+      return price
+    }
+    if(this.size[3]){
+      price=15.99
+      return price
+    }
+  }
+toppingcost(top){
+  if(top=veggieToppings[]){
+    veggie=veggieToppings[]*0.5;
+    return veggie
+  }
+  if(top=meatToppings[]){
+    meat=meatToppings[]*0.99;
+    return meat
+  }
+  price()
+  totalcost=price+meat+veggie;
+    return totalcost
   //type class functions below
-
-
+  static.promotionalDeal(pizza,percent){
+  totalcost=pizza*percent/100;
+  return totalcost
+  }
 }
